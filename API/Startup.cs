@@ -1,4 +1,6 @@
+using BLL.Services;
 using DAL.Context;
+using DAL.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,6 +32,8 @@ namespace API
             services.AddControllers();
             services.AddDbContext<MyContext>(option => 
                                              option.UseSqlServer(Configuration.GetConnectionString("DefaultConn")));
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IUserRepository, UserRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

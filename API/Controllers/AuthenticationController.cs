@@ -1,11 +1,6 @@
-﻿using DAL.Context;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
+﻿using BLL.Services;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 
 namespace API.Controllers
 {
@@ -13,17 +8,17 @@ namespace API.Controllers
     [ApiController]
     public class AuthenticationController : ControllerBase
     {
-        private readonly MyContext _db;
-        public AuthenticationController(MyContext db)
+        private readonly IUserService _service;
+        public AuthenticationController(IUserService service)
         {
-            _db = db;
+            _service = service;
         }
 
         [HttpGet]
         [Route("Login")]
-        public IActionResult Login()
+        public IActionResult Login(int userId)
         {
-            return Ok(_db.Users.Select(x=>x.Id));
+            return Ok(_service.GetUserById(userId));
 
         }
     }

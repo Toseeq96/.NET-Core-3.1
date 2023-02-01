@@ -64,3 +64,5 @@ D:\Angular & .NET practice\.NET\API\API\bin\Debug\netcoreapp3.1\DAL.pdb
 D:\Angular & .NET practice\.NET\API\API\obj\Debug\netcoreapp3.1\API.csproj.CopyComplete
 D:\Angular & .NET practice\.NET\API\API\bin\Debug\netcoreapp3.1\Humanizer.dll
 D:\Angular & .NET practice\.NET\API\API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+D:\Angular & .NET practice\.NET\API\API\bin\Debug\netcoreapp3.1\BLL.dll
+D:\Angular & .NET practice\.NET\API\API\bin\Debug\netcoreapp3.1\BLL.pdb

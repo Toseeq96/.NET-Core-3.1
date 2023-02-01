@@ -8,3 +8,6 @@ D:\Angular & .NET practice\.NET\API\BLL\obj\Debug\netcoreapp3.1\BLL.AssemblyInfo
 D:\Angular & .NET practice\.NET\API\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.CoreCompileInputs.cache
 D:\Angular & .NET practice\.NET\API\BLL\obj\Debug\netcoreapp3.1\BLL.dll
 D:\Angular & .NET practice\.NET\API\BLL\obj\Debug\netcoreapp3.1\BLL.pdb
+D:\Angular & .NET practice\.NET\API\BLL\bin\Debug\netcoreapp3.1\DAL.dll
+D:\Angular & .NET practice\.NET\API\BLL\bin\Debug\netcoreapp3.1\DAL.pdb
+D:\Angular & .NET practice\.NET\API\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.CopyComplete
