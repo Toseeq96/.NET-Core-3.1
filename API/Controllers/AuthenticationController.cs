@@ -1,4 +1,5 @@
-﻿using BLL.Services;
+﻿using API.Filters;
+using BLL.Services;
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -6,6 +7,7 @@ namespace API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [TypeFilter(typeof(MyExceptionFilter))]
     public class AuthenticationController : ControllerBase
     {
         private readonly IUserService _service;

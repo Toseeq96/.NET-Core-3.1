@@ -22,7 +22,7 @@ namespace DAL.Repository
                                FirstName = u.FirstName,
                                LastName = u.LastName
                            }
-                          ).FirstOrDefault();
+                          ).SingleOrDefault();
 
             return result;
         }
