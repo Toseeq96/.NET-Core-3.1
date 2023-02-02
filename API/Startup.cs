@@ -32,7 +32,7 @@ namespace API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers(options=>
-                                    options.Filters.Add(new MyExceptionFilter()));
+                                    options.Filters.Add(new MyExceptionFilter())); //Added here for global use. To add filter at controller or action level add it as a service like; service.AddScoped<MyExceptionFilter>()
             services.AddDbContext<MyContext>(option => 
                                              option.UseSqlServer(Configuration.GetConnectionString("DefaultConn")));
             services.AddScoped<IUserService, UserService>();
